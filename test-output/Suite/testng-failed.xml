@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="com.kuda.testCases.CustomerInfoManagement">
+        <methods>
+          <include name="searchCustomerById"/>
+          <include name="searchCustomerByName"/>
+          <include name="searchByCustomerEmail2"/>
+          <include name="searchByCustomerEmail"/>
+          <include name="createCustomer"/>
+          <include name="viewCustomers"/>
+          <include name="editCustomer"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.kuda.testCases.CustomerInfoManagement -->
+      <class name="com.kuda.testCases.CustomerAccountManagement">
+        <methods>
+          <include name="viewAccountBalance"/>
+          <include name="searchByAccountNumber"/>
+          <include name="createCustomerAccount"/>
+          <include name="searchByAccountName"/>
+          <include name="viewCASAccount"/>
+          <include name="setUp"/>
+          <include name="searchByAccountEmail"/>
+          <include name="editCustomerAccount"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.kuda.testCases.CustomerAccountManagement -->
+      <class name="postingsMgt.ValidateLocalTransfer">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLocalFundTransfer"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- postingsMgt.ValidateLocalTransfer -->
+      <class name="com.kuda.testCases.ValidateLogin">
+        <methods>
+          <include name="googleSign"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.kuda.testCases.ValidateLogin -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

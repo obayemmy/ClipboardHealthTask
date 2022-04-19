@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="NerveSuite">
+  <test name="NerveTest">
+    <classes>
+      <class name="com.kuda.testCases.ValidateLogin"/>
+      <class name="com.kuda.testCases.CustomerInfoManagement"/>
+      <class name="com.kuda.testCases.CustomerAccountManagement"/>
+      <class name="postingsMgt.ValidateLocalTransfer"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

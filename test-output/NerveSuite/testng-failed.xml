@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NerveSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="NerveTest(failed)">
+    <classes>
+      <class name="com.kuda.testCases.ValidateLogin">
+        <methods>
+          <include name="googleSign"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.kuda.testCases.ValidateLogin -->
+      <class name="com.kuda.testCases.CustomerAccountManagement">
+        <methods>
+          <include name="createCustomerAccount" invocation-numbers="0"/>
+          <include name="viewCASAccount"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.kuda.testCases.CustomerAccountManagement -->
+      <class name="com.kuda.testCases.CustomerInfoManagement">
+        <methods>
+          <include name="searchCustomerById"/>
+          <include name="searchCustomerByName"/>
+          <include name="searchByCustomerEmail2"/>
+          <include name="searchByCustomerEmail"/>
+          <include name="createCustomer"/>
+          <include name="viewCustomers"/>
+          <include name="editCustomer"/>
+          <include name="setUp"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- com.kuda.testCases.CustomerInfoManagement -->
+      <class name="postingsMgt.ValidateLocalTransfer">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyLocalFundTransfer"/>
+          <include name="terminateSession"/>
+        </methods>
+      </class> <!-- postingsMgt.ValidateLocalTransfer -->
+    </classes>
+  </test> <!-- NerveTest(failed) -->
+</suite> <!-- Failed suite [NerveSuite] -->
